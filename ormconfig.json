@@ -1,0 +1,20 @@
+
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "",
+  "database": "nestjs",
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "migrations": ["dist/migration/*.js"],
+  "cli": {
+    "migrationsDir": "migration"
+  },
+  "logging": true,
+  "logger" : "advanced-console",
+  "debug": true,
+  "trace": true,
+  "seeds": ["src/seeds/*{.ts,.js}"],
+  "factories": ["src/factories/*{.ts,.js}"]
+}
